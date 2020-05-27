@@ -13,6 +13,7 @@ import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
 import { AppContainerComponent } from './app-container/app-container.component';
 
 // App services
+import { UsersService } from './users.service';
 import { AppLoginComponent } from './app-login/app-login.component';
 import { FruitsComponent } from './fruits/fruits.component';
 
@@ -32,7 +33,7 @@ import { FruitsComponent } from './fruits/fruits.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

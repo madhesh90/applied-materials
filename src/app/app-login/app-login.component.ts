@@ -15,7 +15,7 @@ export class AppLoginComponent implements OnInit {
 
   onSubmit(formValue: any) {
     console.log('Form Value =', formValue);
-    this.router.navigate(['users/']);
+    this.router.navigate(['fruits/']);
     sessionStorage.userToken = 'HLLLKHLHLHGFGFFGF';
   }
 
