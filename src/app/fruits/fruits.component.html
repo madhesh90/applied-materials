@@ -1,0 +1,34 @@
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Fruits Cointaner</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+        <div class="cords red">
+          <div class="conta">
+            <h6>Apple</h6>
+            <button (click)="increment(red_counter,'red')"> + </button>
+            <span class="counter"> {{ red_counter }}</span>
+            <button (click)="decrement(red_counter,'red')"> - </button>
+          </div>
+        </div>
+        <div class="cords yellow">
+          <h6>orange</h6>
+          <div class="conta">
+            <button (click)="increment(yellow_counter,'yellow')"> + </button>
+           <span class="counter"> {{ yellow_counter }}</span>
+            <button (click)="decrement(yellow_counter,'yellow')"> - </button>
+          </div>
+        </div>
+        <div class="cords blue">
+          <h6>grapes</h6>
+          <div class="conta">
+          <button (click)="increment(blue_counter,'blue')"> + </button>
+            <span class="counter"> {{ blue_counter }}</span>
+            <button (click)="decrement(blue_counter,'blue')"> - </button>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
